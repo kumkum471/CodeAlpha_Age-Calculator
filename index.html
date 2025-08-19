@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Age Calculator</h1>
+    <p class="desc">Enter your Date of Birth to calculate exact age in years, months, and days.</p>
+
+    <div class="row">
+      <div class="field">
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" />
+      </div>
+      <button id="calcBtn">Calculate</button>
+    </div>
+
+    <div id="msg" class="error" aria-live="polite"></div>
+
+    <section class="result" id="result" hidden>
+      <div class="tile">
+        <div class="k">Age (Years)</div>
+        <div class="v" id="years">—</div>
+        <div class="muted" id="ymd"></div>
+      </div>
+      <div class="tile">
+        <div class="k">Days Lived (approx.)</div>
+        <div class="v" id="days">—</div>
+        <div class="muted">Excludes time of day</div>
+      </div>
+      <div class="tile">
+        <div class="k">Next Birthday In</div>
+        <div class="v" id="next">—</div>
+        <div class="muted" id="nextDate"></div>
+      </div>
+    </section>
+
+    <div class="footer" id="today"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
